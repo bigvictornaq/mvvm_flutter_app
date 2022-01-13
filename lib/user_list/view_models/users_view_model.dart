@@ -19,6 +19,7 @@ class UserViewModel extends ChangeNotifier {
 
   UserViewModel() {
     getUser();
+    _addingUser = UserModel();
   }
 
   setLoading(bool loading) async {

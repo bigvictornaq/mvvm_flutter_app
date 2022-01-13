@@ -1,5 +1,3 @@
-import 'dart:js';
-
 import 'package:flutter/material.dart';
 import 'package:mvvvm_app/components/app_error.dart';
 import 'package:mvvvm_app/components/app_loading.dart';
