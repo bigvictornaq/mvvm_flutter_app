@@ -15,10 +15,18 @@ class UserListRow extends StatelessWidget {
       child: Container(
         decoration: const BoxDecoration(
             gradient: LinearGradient(
-              colors: [color_verde, color_verde_1, color_verde_2],
+              colors: [color_verde, color_verde_1],
               begin: Alignment.centerLeft,
               end: Alignment.centerRight,
             ),
+            boxShadow: [
+              BoxShadow(
+                color: color_verde_1_withO,
+                blurRadius: 8,
+                spreadRadius: 2,
+                offset: Offset(4, 4),
+              ),
+            ],
             borderRadius: BorderRadius.all(Radius.circular(24.0))),
         child: Column(
           // mainAxisAlignment: MainAxisAlignment.start,

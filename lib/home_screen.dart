@@ -5,6 +5,7 @@ import 'package:mvvvm_app/components/app_title.dart';
 import 'package:mvvvm_app/components/user_list_row.dart';
 import 'package:mvvvm_app/user_list/models/user_list_model.dart';
 import 'package:mvvvm_app/user_list/view_models/users_view_model.dart';
+import 'package:mvvvm_app/util/constants.dart';
 import 'package:mvvvm_app/util/navigation_utils.dart';
 
 import 'package:provider/provider.dart';
@@ -14,9 +15,11 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     UserViewModel userViewModel = context.watch<UserViewModel>();
     return Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: color_negro_1,
         appBar: AppBar(
+          centerTitle: true,
           title: Text('Users'),
+          backgroundColor: color_negro_1,
           actions: [
             IconButton(
                 onPressed: () async {
